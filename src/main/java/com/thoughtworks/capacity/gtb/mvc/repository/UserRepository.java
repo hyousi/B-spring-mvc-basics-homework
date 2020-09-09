@@ -22,4 +22,8 @@ public class UserRepository {
     public int size() {
         return users.size();
     }
+
+    public User findUserByUserName(String username) {
+        return users.stream().filter(user -> user.getUsername().equals(username)).findAny().orElse(null);
+    }
 }
