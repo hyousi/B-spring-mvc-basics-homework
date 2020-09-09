@@ -1,7 +1,6 @@
 package com.thoughtworks.capacity.gtb.mvc.repository;
 
 import com.thoughtworks.capacity.gtb.mvc.domain.User;
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 import org.springframework.stereotype.Repository;
@@ -16,6 +15,7 @@ public class UserRepository {
     }
 
     public void add(User user) {
+        user.setId(users.size());
         users.add(user);
     }
 

@@ -1,13 +1,11 @@
 package com.thoughtworks.capacity.gtb.mvc.domain;
 
 import javax.validation.constraints.Email;
-import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Generated;
 import lombok.NoArgsConstructor;
 
 @Data
@@ -15,7 +13,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class User {
 
-    @Generated
     private Integer id;
 
     @NotNull(message = "用户名不为空")
